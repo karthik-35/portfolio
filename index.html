@@ -98,6 +98,36 @@
       .trow .tcontent{grid-column:1}
       .trow .tmeta{left:-6px!important;right:auto}
     }
+
+    /* Bottom contact bar */
+.contact-bar{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+  padding:26px 0 10px;
+  margin-top:12px;
+}
+.contact-line{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.contact-line .ico{
+  width:18px;
+  height:18px;
+  fill:currentColor;
+  opacity:.9;
+  flex:0 0 auto;
+}
+.contact-link{
+  color:var(--ink);
+  font-weight:500;          /* matches your screenshot’s bold label */
+  text-decoration:none;
+}
+.contact-link:hover{ text-decoration:underline; }
+
+
   </style>
 </head>
 <body>
@@ -273,6 +303,30 @@
 
       <p class="muted" style="margin-top:18px;font-size:13px">Your privacy is important to me. Email or phone works great; happy to share more details on request.</p>
     </section>
+
+    <section class="contact-bar" aria-label="Contact">
+  <div class="contact-line">
+    <!-- Mail icon -->
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/>
+    </svg>
+    <a class="contact-link" href="mailto:karthikeyapullemla@gmail.com">
+      karthikeyapullemla@gmail.com
+    </a>
+  </div>
+
+  <div class="contact-line">
+    <!-- Phone icon -->
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.56.57 1 1 0 011 1v3.65a1 1 0 01-1 1C10.07 22.97 1.03 13.93 1.04 3.01a1 1 0 011-1H5.7a1 1 0 011 1c0 1.24.2 2.43.57 3.56a1 1 0 01-.25 1.02l-2.4 2.2z"/>
+    </svg>
+    <a class="contact-link" href="tel:+14695141714">
+      +1 (469) 514-1714
+    </a>
+  </div>
+</section>
+
+
 
     <footer style="text-align:center;color:var(--muted);font-size:13px;margin-top:24px">© <span id="year"></span> · Karthikeya Pullemla · Built with advanced vanilla HTML/CSS/JS</footer>
   </main>
